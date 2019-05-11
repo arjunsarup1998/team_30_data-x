@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>InstaPromote</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="/index" class="logo">
+									<span class="symbol"><img src="{{ url_for('static', filename='images/logo.svg') }}" alt="" /></span><span class="title">InstaPromote</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="/index">Home</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h1>Choose Influencer</h1>
+								<p>Select a Fasion Influencer you want to know more about.</p>
+							</header>
+							<section class="tiles">
+								<article class="style1">
+									<span class="image">
+										<img src="https://scontent-lax3-2.cdninstagram.com/vp/4eb9ccb5558c0ecf3879b2033c5b5a22/5D5864F6/t51.2885-19/s320x320/40199237_261683794681784_6576339887958523904_n.jpg?_nc_ht=scontent-lax3-2.cdninstagram.com" alt="" />
+									</span>
+									<a href="/generic">
+										<h2>Bradley Martyn</h2>
+										<div class="content">
+											<p>@bradleymartyn</p>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="https://scontent-lax3-2.cdninstagram.com/vp/b739c9f62e8373049a1162ce430b3e6f/5D51D299/t51.2885-19/s320x320/41214774_457280458093670_8826558651167670272_n.jpg?_nc_ht=scontent-lax3-2.cdninstagram.com" alt="" />
+									</span>
+									<a href="/generic">
+										<h2>Kayla Itsines</h2>
+										<div class="content">
+											<p>@kayla_itsines</p>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="https://scontent-lax3-2.cdninstagram.com/vp/a050b6ceb2ccb1a5d3ad0c7494c0dcfd/5D331471/t51.2885-19/s320x320/49637385_2000492713584306_1377887545064423424_n.jpg?_nc_ht=scontent-lax3-2.cdninstagram.com" alt="" />
+									</span>
+									<a href="/generic">
+										<h2>Som Merray</h2>
+										<div class="content">
+											<p>@sommerray</p>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="https://scontent-lax3-2.cdninstagram.com/vp/94e081a6b6423502781bbf7b89f02f3d/5D553502/t51.2885-19/s320x320/49515991_325105068134195_2502436908030754816_n.jpg?_nc_ht=scontent-lax3-2.cdninstagram.com" alt="" />
+									</span>
+									<a href="/generic">
+										<h2>Joe Wicks</h2>
+										<div class="content">
+											<p>@thebodycoach</p>
+										</div>
+									</a>
+								</article>
+								<article class="style5">
+									<span class="image">
+										<img src="https://scontent-lax3-2.cdninstagram.com/vp/f5972ea26853522c634f226321501287/5D592027/t51.2885-19/s320x320/52840555_1918106758318832_360224314479345664_n.jpg?_nc_ht=scontent-lax3-2.cdninstagram.com" alt="" />
+									</span>
+									<a href="/generic">
+										<h2>Jen Selter</h2>
+										<div class="content">
+											<p>@jenselter</p>
+										</div>
+									</a>
+								</article>
+								<article class="style6">
+									<span class="image">
+										<img src="https://scontent-lax3-2.cdninstagram.com/vp/5281cf3e011ceaaa76899b0478212cd5/5D569F25/t51.2885-19/s320x320/51887902_2151320438240475_9109079667163267072_n.jpg?_nc_ht=scontent-lax3-2.cdninstagram.com" alt="" />
+									</span>
+									<a href="/generic">
+										<h2>Michelle Lewin</h2>
+										<div class="content">
+											<p>@michelle_lewin</p>
+										</div>
+									</a>
+								</article>
+							</section>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}">></script>
+			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}">><script>
+			<script src="{{ url_for('static', filename='assets/js/util.js') }}">></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js') }}">></script>
+
+	</body>
+</html>
