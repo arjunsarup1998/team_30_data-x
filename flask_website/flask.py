@@ -25,6 +25,11 @@ def home():
 def choose():
 	return render_template('choose.html')
 
+@app.route("/choose2")
+def choose2():
+	return render_template('choose2.html')
+
+
 #page with all elements
 @app.route("/elements")
 def elements():
@@ -47,7 +52,7 @@ def generic():
 #final page with al the data
 @app.route("/person", methods=['GET', 'POST'])
 def person():
-	return render_template('person.html',  influencer_name=LikePredictInstance.influencerUsername, influencer_dp = LikePredictInstance.influencerDP, predlikes = LikePredictInstance.likeValuePredicted, photosrc = LikePredictInstance.influencerTopic)
+	return render_template('person.html',  influencer_name=LikePredictInstance.influencerUsername, influencer_dp = LikePredictInstance.influencerDP, predlikes = LikePredictInstance.likeValuePredicted, photosrc = LikePredictInstance.influencerTopic, posfin = LikePredictInstance.pos_sentiment, negfin = LikePredictInstance.neg_sentiment, neutfin = LikePredictInstance.neutral_sentiment)
 
 
 if __name__ == '__main__' :

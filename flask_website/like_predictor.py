@@ -31,7 +31,12 @@ class LikePredict():
 
         self.influencerTopic =  'images/'+self.influencerUsername+'.png'
         self.influencerDP = self.AB_data['GraphImages'][0]["display_url"]
-
+        SentimentData = pd.read_csv("sentiment_analysis_results.csv") 
+        SentimentData = SentimentData.set_index('Name')
+        self.pos_sentiment = int(SentimentData.at['kyliejenner', '% Positive'])
+        self.neg_sentiment = int(SentimentData.at['kyliejenner', '% Negative'])
+        self.neutral_sentiment = int(SentimentData.at['kyliejenner', '% Neutral'])+1
+        
 
     def trainLikePredict(self):
 

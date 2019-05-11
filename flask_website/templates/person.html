@@ -49,8 +49,8 @@
 							<h1>@{{influencer_name}}</h1>
 							<span class="image left"><img src={{influencer_dp}} alt="" /></span>
 							<h2>Predicted Likes: {{predlikes}}</h2>
-							<h3>Average Sentiment of Followers: <br/> 81.2% Positive <br/> 10.3% Neutral <br/> 8.5% Negative</h3>
-							<img src="{{ url_for('static', filename=photosrc) }}" />
+							<h3>Average Sentiment of Followers: <br/> {{posfin}}% Positive <br/> {{neutfin}}% Neutral <br/> {{negfin}}% Negative</h3>
+							<img src="{{ url_for('static', filename=photosrc) }}" alt="Image" height="460" width="800" />
 						</div>
 					</div>
 
